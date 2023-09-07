@@ -1,8 +1,12 @@
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
   return (
+    <>
+    <Navbar />
     <div className='bg-orange-400 h-[780px]'>
         <div className='py-7 px-20 flex'>
             <div className="w-16 h-16 bg-zinc-300 rounded-full" />
@@ -89,6 +93,8 @@ const page = () => {
         </div>
 
     </div>
+    <Footer />
+    </>
   )
 }
 

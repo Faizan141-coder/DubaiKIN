@@ -1,5 +1,7 @@
 'use client'
 
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react'
@@ -63,6 +65,7 @@ const page = () => {
 
   return (
     <>
+        <Navbar />
         {/* Your Pending Money */}
         <div className='bg-orange-400 pl-28 pt-5'>
             <div className="text-white text-lg font-semibold mb-4 mr-24">Your Pending Money</div>
@@ -188,6 +191,7 @@ const page = () => {
                 When you send money outside of the U.S. or its territories, the term "receiver" means your Final Receiver and the terms "transaction" or "transfer" generally mean the two separate money transfer transactions as described in our terms and conditions.<br/><br/>1 Date available will be displayed on receipt for international transfers over $15. Service and funds may be delayed or unavailable depending on certain factors including the Service selected, the selection of delayed delivery options, special terms applicable to each Service, amount sent, destination country, currency availability, regulatory issues, consumer protection issues, identification requirements, delivery restrictions, agent location hours, and differences in time zones (collectively, "Restrictions"). Additional restrictions may apply; see our terms and conditions for details.<br/><br/>2 In addition to the transfer fee, Western Union also makes money from currency exchange. When choosing a money transmitter, carefully compare both transfer fees and exchange rates. Fees, foreign exchange rates and taxes may vary by brand, channel, and location based on a number of factors. Fees and rates subject to change without notice.<br/>
             </div>
         </div>
+        <Footer />
     </>
   )
 }

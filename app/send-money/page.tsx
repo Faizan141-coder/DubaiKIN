@@ -1,5 +1,7 @@
 'use client'
 
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
@@ -9,6 +11,8 @@ const page = () => {
   const router = useRouter()
 
   return (
+    <>
+    <Navbar />
     <div className='flex bg-orange-400'>
       <div className="w-full h-[600px] p-28">
         <div className="text-white text-3xl font-bold">Transfer Money Across<br/>World In Real Time<br/>With No charge</div>
@@ -50,6 +54,8 @@ const page = () => {
         <div className='text-center items-center mt-5'><span className="text-black text-opacity-70 text-xs font-medium">By clicking Continue. I am agree with</span><span className="text-black text-xs font-medium"> </span><span className="text-orange-400 cursor-pointer hover:text-orange-300 text-xs font-medium">Terms & Policy</span></div>        
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 

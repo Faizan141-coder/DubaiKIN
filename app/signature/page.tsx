@@ -1,5 +1,7 @@
 'use client'
 
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
@@ -9,6 +11,8 @@ const page = () => {
     const router = useRouter()
 
     return (
+        <>
+        <Navbar />
         <div className='px-28 py-32 bg-orange-400 h-[750px]'>
             <h1 className="text-white mb-3 text-lg font-bold">Please Give Your Digital Signature</h1>
             <div className="w-full h-96 bg-white bg-opacity-50">
@@ -26,6 +30,8 @@ const page = () => {
                 </button>
             </div>
         </div>
+        <Footer />
+        </>
     )
 }
 

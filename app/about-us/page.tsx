@@ -1,8 +1,12 @@
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
   return (
+    <div>
+    <Navbar />
     <div className='flex'>
       <div className='w-full bg-orange-400 h-[770px]'>
         <h1 className="w-full text-center my-5 text-white text-xl font-semibold">About US</h1>
@@ -26,6 +30,8 @@ const page = () => {
           height={300}
         />
       </div>
+    </div>
+    <Footer />
     </div>
   )
 }

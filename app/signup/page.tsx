@@ -1,8 +1,12 @@
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
   return (
+    <>
+    <Navbar />
     <div className='flex bg-orange-400'>
       <div className="w-full h-[770px] p-28">
         <div className="text-white text-3xl font-bold">Transfer Money Across<br/>World In Real Time<br/>With No charge</div>
@@ -50,6 +54,8 @@ const page = () => {
         </button>       
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
