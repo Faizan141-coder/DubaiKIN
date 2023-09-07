@@ -1,8 +1,14 @@
-    import NavbarAdmin from '@/components/NavbarAdmin'
-    import Image from 'next/image'
-    import React from 'react'
+'use client'
 
-    const page = () => {
+import NavbarAdmin from '@/components/NavbarAdmin'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+import React from 'react'
+
+const page = () => {
+
+    const router = useRouter()
+
     return (
         <div>
             <NavbarAdmin />
@@ -11,7 +17,7 @@
                 {/* SideBar */}
                 <div className="w-64 h-96 left-[16px] top-[20px] absolute">
                     <div className="w-64 h-[460px] left-0 top-0 absolute bg-white rounded-2xl" />
-                    <div className="w-64 h-10 left-0 top-[25px] absolute">
+                    <div onClick={() => router.push('/admin')} className="cursor-pointer w-64 h-10 left-0 top-[25px] absolute">
                         <div className="w-52 h-10 left-[24px] top-0 absolute">
                         <Image 
                             src="/dashboard.png"
@@ -24,7 +30,7 @@
                         <div className="w-6 h-6 left-[38px] top-[8px] absolute" />
                         <div className="w-36 h-4 left-[86px] top-[11px] absolute text-sm font-medium leading-tight tracking-tight">Dashboard</div>
                     </div>
-                    <div className="w-64 h-10 left-0 top-[70px] absolute">
+                    <div onClick={() => router.push('/admin-people')} className="cursor-pointer w-64 h-10 left-0 top-[70px] absolute">
                         <div className="w-52 h-10 left-[24px] top-[6px] absolute">
                         <Image 
                             src="/people.svg"
@@ -37,7 +43,7 @@
                         <div className="w-36 h-4 left-[86px] top-[16px] absolute text-sm font-medium leading-tight tracking-tight">People</div>
                     </div>
                     
-                    <div className="w-64 h-10 left-0 top-[120px] absolute">
+                    <div className="cursor-pointer w-64 h-10 left-0 top-[120px] absolute">
                     <div className="w-52 h-10 left-[24px] top-[6px] absolute bg-blue-100 rounded">
                         <Image 
                             src="/transfer-orange.png"
@@ -49,7 +55,7 @@
                         </div>
                         <div className="w-36 h-4 left-[86px] top-[16px] absolute text-orange-400 text-sm font-medium leading-tight tracking-tight">Transfer Rate</div>
                     </div>
-                    <div className="w-64 h-10 left-0 top-[168px] absolute">
+                    <div onClick={() => router.push('/admin-calendar')} className="cursor-pointer w-64 h-10 left-0 top-[168px] absolute">
                         <Image 
                             src="/calendar.svg"
                             width={24}
@@ -60,7 +66,7 @@
                         <div className="w-36 h-4 left-[86px] top-[11px] absolute text-black text-opacity-90 text-sm font-medium leading-tight tracking-tight">Calendar</div>
                         <div className="w-6 h-6 left-[38px] top-[8px] absolute" />
                     </div>
-                    <div className="w-64 h-10 left-0 top-[216px] absolute">
+                    <div onClick={() => router.push('/admin-transactions')} className="cursor-pointer w-64 h-10 left-0 top-[216px] absolute">
                         <Image 
                             src="/transactions.svg"
                             width={24}
@@ -71,7 +77,7 @@
                         <div className="w-6 h-6 left-[38px] top-[8px] absolute" />
                         <div className="w-36 h-4 left-[86px] top-[11px] absolute text-black text-opacity-90 text-sm font-medium leading-tight tracking-tight">Transactions</div>
                     </div>
-                    <div className="w-64 h-10 left-0 top-[264px] absolute">
+                    <div className="cursor-pointer w-64 h-10 left-0 top-[264px] absolute">
                         <Image 
                             src="/fees.svg"
                             width={24}
@@ -84,7 +90,7 @@
                     </div>
                     <div className="w-36 h-4 left-[86px] top-[11px] absolute text-black text-opacity-90 text-sm font-medium leading-tight tracking-tight">Fees</div>
                     </div>
-                    <div className="w-64 h-10 left-0 top-[312px] absolute">
+                    <div onClick={() => router.push('/admin-currency')} className="cursor-pointer w-64 h-10 left-0 top-[312px] absolute">
                         <Image 
                             src="/currency.svg"
                             width={24}
@@ -97,7 +103,7 @@
                         </div>
                         <div className="w-36 h-4 left-[86px] top-[11px] absolute text-black text-opacity-90 text-sm font-medium leading-tight tracking-tight">Currency Setup</div>
                     </div>
-                    <div className="w-64 h-10 left-0 top-[360px] absolute">
+                    <div className="w-64 h-10 left-0 top-[360px] absolute cursor-pointer">
                         <Image 
                             src="/settings.svg"
                             width={24}
@@ -110,7 +116,7 @@
                         </div>
                         <div className="w-36 h-4 left-[86px] top-[11px] absolute text-black text-opacity-90 text-sm font-medium leading-tight tracking-tight">Settings</div>
                     </div>
-                    <div className="w-64 h-10 left-0 top-[408px] absolute">
+                    <div className="w-64 h-10 left-0 top-[408px] absolute cursor-pointer">
                         <Image 
                             src="/help.svg"
                             width={24}
@@ -134,6 +140,6 @@
             </div>
         </div>
     )
-    }
+}
 
-    export default page
+export default page
