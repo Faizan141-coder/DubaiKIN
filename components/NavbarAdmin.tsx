@@ -11,7 +11,7 @@ const NavbarAdmin = () => {
         <div className="w-full flex">
           <div className="flex p-3">
             <Image src="/jane.svg" className="rounded-full" width={30} height={30} alt={'Jane'} />
-            <div className=' ml-2 mt-[4px] w-[100px]'>
+            <div className='ml-2 mt-[4px] w-[100px]'>
               <h1 className="inline text-left">JaneS.</h1>
             </div>
             <Image src="/downarrow1.svg" className="ml-28 mt-[2px]" width={14} height={14} alt={''} />
