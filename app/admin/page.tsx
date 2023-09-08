@@ -174,9 +174,28 @@ const page = () => {
                     <div className="w-6 h-6 left-[8px] top-[224px] absolute">
                     </div>
                     <div className="w-96 h-64 left-[54px] top-[112px] absolute">
-                        <div className="w-80 h-px left-0 top-[35px] absolute border border-neutral-400"></div>
-                        <div className="w-80 h-px left-0 top-[99px] absolute border border-neutral-400"></div>
-                        <div className="w-80 h-px left-[4px] top-[171px] absolute border border-neutral-400"></div>
+                    <div className="w-80 h-px left-0 top-[36px] absolute border border-dashed border-neutral-400"></div>
+                        <Image 
+                            src='/orange-graph.png'
+                            alt='orange graph'
+                            width={323}
+                            height={100}
+                            className='mt-[35px]'
+                        />
+                        <Image 
+                            src='/blue-graph.png'
+                            alt='orange graph'
+                            width={323}
+                            height={100}
+                            className='mt-[-32px]'
+                        />
+                        <Image 
+                            src='/purple-graph.png'
+                            alt='orange graph'
+                            width={323}
+                            height={100}
+                            className='mt-[-78px]'
+                        />
                         <div className="w-8 h-4 left-[344px] top-[26px] absolute text-neutral-600 text-base font-normal leading-normal tracking-tight">707</div>
                         <div className="w-8 h-4 left-[344px] top-[90px] absolute text-neutral-600 text-base font-normal leading-normal tracking-tight">400</div>
                         <div className="w-10 h-4 left-[30px] top-[240px] absolute text-center text-neutral-600 text-base font-normal leading-normal tracking-tight">2016</div>
@@ -203,16 +222,14 @@ const page = () => {
                     <div className="w-6 h-6 left-[432px] top-[224px] absolute">
                     </div>
                     <div className="w-64 h-64 left-[104px] top-[64px] absolute">
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-rose-500 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-yellow-500 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-pink-700 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-teal-500 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-sky-500 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-purple-500 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-green-400 rounded-full" />
-                        <div className="w-64 h-64 left-0 top-0 absolute bg-violet-600 rounded-full" />
+                        <Image 
+                            src='/Diagram.png'
+                            alt='Pie Chart'
+                            width={250}
+                            height={110}
+                        />
                     </div>
-                    <div className="w-32 left-[168px] top-[179px] absolute text-center text-black text-base font-normal leading-normal tracking-tight">Projects by account</div>
+                    <div className="w-32 left-[168px] top-[170px] absolute text-center text-black text-base font-normal leading-normal tracking-tight">Projects by account</div>
                     <div className="w-14 h-4 left-[40px] top-[360px] absolute">
                         <div className="w-4 h-4 left-0 top-0 absolute bg-rose-500 rounded-full" />
                         <div className="w-8 h-4 left-[24px] top-0 absolute text-black text-sm font-normal leading-tight tracking-wide">KFC</div>
